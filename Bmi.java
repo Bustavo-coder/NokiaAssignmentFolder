@@ -1,26 +1,22 @@
-import java .util.Scanner;
-	public class Bmi {
-		public static void main (String [] args){
-	
-	Scanner input = new Scanner(System.in);
+import java.util.Scanner;
+public class Bmi {
+	public static void main(String [] args){
+		Scanner input = new Scanner(System.in);
+		System.out.println("Input Your weight in pounds:");
 
-	System.out.println("Input Your weight in Kilograms");
-	double userWeight = input.nextDouble();
+		double weight = input.nextDouble();
+			
+		System.out.println("Input Your Height meters:");
+		double height = input.nextDouble();
 
-	System.out.println("Input Your height in Inchies"); 
-	double userHeight = input.nextDouble();
+		double weightTopounds = weight * 0.45359237;
+		double heightTometers = height * 0.0254;
 
-	double bmi = userWeight/(userHeight * userHeight);
-
-	System.out.printf("%n%s %f", "Your Bmi is", bmi);
-	
-	if(bmi < 50){
-		System.out.println("healthy");
-	}
-else {
-	System.out.println("Not Healthy");
-}
+		double bmi = weightTopounds/(heightTometers*heightTometers);
+		System.out.printf("%f%s", bmi, " is Your Body Mass Index");
 
 
+
+		
 }
 }
