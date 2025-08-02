@@ -1,2 +1,0 @@
-# NokiaAssignmentFolder
-Nokia Switch
